@@ -1,0 +1,33 @@
+@use 'variables';
+@use 'mixins';
+
+body {
+  @include mixins.reset;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: variables.$text-color-primary;
+  background-color: variables.$background-color-light;
+  margin-top: 70px; // Aggiungi un margin-top per evitare che il contenuto sia nascosto sotto la barra di navigazione
+}
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.ciop {
+  @include mixins.flex-center;
+  flex-direction: column;
+  height: calc(100vh - 70px); // Altezza totale meno l'altezza della barra di navigazione
+}
+
+h1 {
+  color: #42b983;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #333;
+}
