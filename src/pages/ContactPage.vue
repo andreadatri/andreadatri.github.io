@@ -1,7 +1,7 @@
 <template>
   <div class="ciop">
     <h1>Contact</h1>
-    <p>Questa è la pagina About del nostro sito.</p>
+    <p>This is the Contact page of our site.</p>
   </div>
 </template>
 

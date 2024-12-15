@@ -1,7 +1,7 @@
 <template>
   <div class="ciop">
-    <h1>Chi Siamo</h1>
-    <p>Questa è la pagina About del nostro sito. Siamo lieti che tu sia qui</p>
+    <h1>About Us</h1>
+    <p>This is the About page of our site. We are glad you are here.</p>
   </div>
 </template>
 

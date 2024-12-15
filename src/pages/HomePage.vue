@@ -1,7 +1,7 @@
 <template>
   <div class="ciop">
     <h1>Home Page</h1>
-    <p>Questa è la pagina Home del nostro sito.</p>
+    <p>This is the Home page of our site.</p>
   </div>
 </template>
 
