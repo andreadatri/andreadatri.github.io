@@ -33,8 +33,9 @@ a {
 }
 
 a:hover {
-  background-color: $background-color-secondary;
+  background-color: $background-color-light;
   transition: background-color 0.5s ease;
+  color: rgb(56, 88, 88);
 }
 
 .router-link-active {
