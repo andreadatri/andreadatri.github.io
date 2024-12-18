@@ -26,8 +26,7 @@ li {
 a {
   color: $text-color-light;
   text-decoration: none;
-  padding: 0 1rem;
-  height: 70px; // Altezza esplicita uguale a quella della barra di navigazione
+  padding: 10px 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -35,8 +34,19 @@ a {
 
 a:hover {
   background-color: $background-color-secondary;
+  transition: background-color 0.5s ease;
 }
 
 .router-link-active {
-  background-color: #1bbe15;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -18px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: $background-color-dark;
+  }
 }
