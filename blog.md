@@ -7,7 +7,7 @@ permalink: /blog/
 pagination:
   enabled: true
   collection: posts
-  per_page: 2
+  per_page: 3
 ---
 
 {% if paginator.posts.size > 0 %}
