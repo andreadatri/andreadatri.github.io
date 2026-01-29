@@ -460,3 +460,41 @@ body {
 .post-body ul {
   padding-left: 18px;
 }
+
+.maintenance {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0 80px;
+}
+
+.maintenance-card {
+  background: #fff;
+  padding: 32px 34px;
+  border-radius: 20px;
+  box-shadow: 0 22px 46px rgba(18, 24, 22, 0.12);
+  max-width: 560px;
+}
+
+.maintenance-label {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 12px;
+  color: #b26a46;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.maintenance-actions {
+  display: flex;
+  gap: 14px;
+  margin: 22px 0 18px;
+  flex-wrap: wrap;
+}
+
+.maintenance-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: var(--muted);
+  font-size: 13px;
+}

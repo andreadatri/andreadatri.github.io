@@ -15,6 +15,7 @@
             <span class="brand-mark">S</span>
             <span class="brand-name">Sepe Studio</span>
           </div>
+          {% unless page.maintenance %}
           <nav class="nav">
             <a href="{{ '/' | relative_url }}" class="nav-link">Home</a>
             <a href="{{ '/about/' | relative_url }}" class="nav-link">About</a>
@@ -25,6 +26,7 @@
             <span class="nav-date">29 Jan 2026</span>
             <button class="btn btn-outline" type="button">Parliamone</button>
           </nav>
+          {% endunless %}
         </div>
       </header>
 
