@@ -1,0 +1,21 @@
+---
+layout: post
+title: "Brand sprint per startup locali"
+date: 2026-01-29 09:20:00 +0100
+categories: studio branding
+image: /assets/images/post-brand.svg
+excerpt: "Un percorso rapido per definire identita visiva, tono di voce e kit operativo in due settimane."
+---
+
+![Anteprima brand sprint]({{ page.image }})
+
+In due settimane possiamo dare forma a un'identita coerente e pronta per il lancio. Il processo parte da un workshop con il team, continua con moodboard e direzioni visive, e si chiude con un kit pronto da usare.
+
+Cosa include il brand sprint:
+
+- Analisi del mercato locale e dei competitor
+- Sistema tipografico e palette colori
+- Linee guida per social, web e materiali offline
+- Kit di asset riutilizzabili
+
+Se vuoi accelerare il lancio del tuo brand, questo e il modo piu rapido per partire con basi solide.
