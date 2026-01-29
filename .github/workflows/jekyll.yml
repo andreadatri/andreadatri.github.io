@@ -3,7 +3,17 @@ name: Deploy Jekyll site to Pages
 on:
   push:
     branches: ["main"]
+
   workflow_dispatch:
+    inputs:
+      maintenance:
+        description: "Enable maintenance mode (true/false)"
+        required: true
+        default: "false"
+        type: choice
+        options:
+          - "false"
+          - "true"
 
 permissions:
   contents: read
@@ -18,7 +28,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
       # Node (per Vite)
       - name: Setup Node
@@ -30,11 +41,11 @@ jobs:
       - name: Install JS deps
         run: npm ci
 
+      # Ruby
       - name: Setup Ruby
-        uses: ruby/setup-ruby@4a9ddd6f338a97768b8006bf671dfbad383215f4
+        uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "3.3"
-          bundler: "4.0.5"
+          ruby-version: "3.1"
           bundler-cache: true
 
       - name: Setup Pages
@@ -47,9 +58,20 @@ jobs:
         env:
           BASE_PATH: ${{ steps.pages.outputs.base_path }}
 
-      # Build Jekyll
-      - name: Build with Jekyll
-        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+      # Build Jekyll (normale o maintenance)
+      - name: Build with Jekyll (normal/maintenance)
+        run: |
+          if [ "${{ github.event.inputs.maintenance }}" = "true" ]; then
+            echo "Building in MAINTENANCE mode"
+            bundle exec jekyll build \
+              --config _config.yml,_config_maintenance.yml \
+              --baseurl "${{ steps.pages.outputs.base_path }}"
+          else
+            echo "Building in NORMAL mode"
+            bundle exec jekyll build \
+              --config _config.yml \
+              --baseurl "${{ steps.pages.outputs.base_path }}"
+          fi
         env:
           JEKYLL_ENV: production
 
@@ -65,5 +87,6 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
-      - id: deployment
+      - name: Deploy to GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v4
