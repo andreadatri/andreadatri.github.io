@@ -63,14 +63,12 @@ jobs:
         run: |
           if [ "${{ github.event.inputs.maintenance }}" = "true" ]; then
             echo "Building in MAINTENANCE mode"
-            bundle exec jekyll build \
-              --config _config.yml,_config_maintenance.yml \
-              --baseurl "${{ steps.pages.outputs.base_path }}"
+            bundle exec jekyll build --config _config.yml,_config_maintenance.yml --baseurl "${{ steps.pages.outputs.base_path }}"
+            echo "----- MAINT FLAG IN _site -----"
+            grep -R "maintenance" -n _site/index.html || true
           else
             echo "Building in NORMAL mode"
-            bundle exec jekyll build \
-              --config _config.yml \
-              --baseurl "${{ steps.pages.outputs.base_path }}"
+            bundle exec jekyll build --config _config.yml --baseurl "${{ steps.pages.outputs.base_path }}"
           fi
         env:
           JEKYLL_ENV: production

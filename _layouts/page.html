@@ -41,8 +41,15 @@
 
         <section class="page-content">
           <div class="container">
-            {{ content }}
-          </div>
+{% if site.maintenance %}
+  <div style="height:100vh;display:flex;align-items:center;justify-content:center;background:#fff;font-family:system-ui">
+    <div style="border:2px solid #000;padding:24px 40px;font-size:28px;font-weight:600;letter-spacing:1px;">
+      MAINTENANCE MODE
+    </div>
+  </div>
+{% else %}
+  {{ content }}
+{% endif %}          </div>
         </section>
       </main>
     </div>
