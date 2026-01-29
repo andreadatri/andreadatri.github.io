@@ -12,13 +12,10 @@ maintenance: true
     <p class="maintenance-label">Maintenance mode</p>
     <h2>Il sito e in aggiornamento.</h2>
     <p>Stiamo ottimizzando contenuti e performance. Se hai un'urgenza puoi scriverci.</p>
-    <div class="maintenance-actions">
-      <a class="btn btn-primary" href="mailto:hello@sepestudio.it">Scrivici</a>
-      <a class="btn btn-ghost" href="tel:+390212345678">Chiama</a>
-    </div>
     <div class="maintenance-meta">
       <span>Milano · Lun-Ven 9:00 - 18:30</span>
       <span>hello@sepestudio.it</span>
+      <span>+39 02 1234 5678</span>
     </div>
   </div>
 </div>
