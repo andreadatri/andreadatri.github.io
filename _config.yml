@@ -63,3 +63,4 @@ exclude:
 # Spostamento dei file Markdown in una cartella dedicata
 
 # File di configurazione per Jekyll
+source: docs
