@@ -8,7 +8,7 @@ permalink: /servizi/
 
 <div class="page-grid">
   <div class="page-card">
-    <h3>Strategia digitale</h3>
+    <h3>Strategia</h3>
     <p>Audit, posizionamento e roadmap con obiettivi trimestrali, KPI e priorita operative.</p>
   </div>
   <div class="page-card">
