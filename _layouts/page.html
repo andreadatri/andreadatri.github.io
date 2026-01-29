@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/site.css' | relative_url }}" />
+    {% include custom-head.html %}
+  </head>
+  <body>
+    <div class="page">
+      <header class="site-header">
+        <div class="container header-inner">
+          <div class="brand">
+            <span class="brand-mark">S</span>
+            <span class="brand-name">Sepe Studio</span>
+          </div>
+          <nav class="nav">
+            <a href="{{ '/' | relative_url }}" class="nav-link">Home</a>
+            <a href="{{ '/about/' | relative_url }}" class="nav-link">About</a>
+            <a href="{{ '/servizi/' | relative_url }}" class="nav-link">Servizi</a>
+            <a href="{{ '/portfolio/' | relative_url }}" class="nav-link">Portfolio</a>
+            <a href="{{ '/blog/' | relative_url }}" class="nav-link">Blog</a>
+            <a href="{{ '/contatti/' | relative_url }}" class="nav-link">Contatti</a>
+            <span class="nav-date">29 Jan 2026</span>
+            <button class="btn btn-outline" type="button">Parliamone</button>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <section class="page-hero">
+          <div class="container">
+            <p class="eyebrow">{{ page.eyebrow | default: 'Sepe Studio' }}</p>
+            <h1>{{ page.title }}</h1>
+            {% if page.subtitle %}
+            <p class="lead">{{ page.subtitle }}</p>
+            {% endif %}
+          </div>
+        </section>
+
+        <section class="page-content">
+          <div class="container">
+            {{ content }}
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

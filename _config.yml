@@ -59,3 +59,7 @@ exclude:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# Spostamento dei file Markdown in una cartella dedicata
+
+# File di configurazione per Jekyll

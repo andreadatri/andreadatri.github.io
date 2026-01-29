@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ site.title }} | Studio creativo</title>
+    <link rel="stylesheet" href="{{ '/assets/site.css' | relative_url }}" />
+    {% include custom-head.html %}
+  </head>
+  <body>
+    <div class="page">
+      <header class="site-header">
+        <div class="container header-inner">
+          <div class="brand">
+            <span class="brand-mark">S</span>
+            <span class="brand-name">Sepe Studio</span>
+          </div>
+          <nav class="nav">
+            <a href="{{ '/' | relative_url }}" class="nav-link">Home</a>
+            <a href="{{ '/about/' | relative_url }}" class="nav-link">About</a>
+            <a href="{{ '/servizi/' | relative_url }}" class="nav-link">Servizi</a>
+            <a href="{{ '/portfolio/' | relative_url }}" class="nav-link">Portfolio</a>
+            <a href="{{ '/blog/' | relative_url }}" class="nav-link">Blog</a>
+            <a href="{{ '/contatti/' | relative_url }}" class="nav-link">Contatti</a>
+            <span class="nav-date">29 Jan 2026</span>
+            <button class="btn btn-outline" type="button">Parliamone</button>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="container hero-grid">
+            <div class="hero-copy">
+              <p class="eyebrow">Studio creativo &amp; sviluppo web</p>
+              <h1>Diamo forma alle tue idee con esperienze digitali memorabili.</h1>
+              <p class="lead">
+                Siamo un team agile che unisce strategia, design e sviluppo per far
+                crescere il tuo business online.
+              </p>
+              <div class="hero-actions">
+                <button class="btn btn-primary" type="button">Contattaci</button>
+                <button class="btn btn-ghost" type="button">Vedi progetti</button>
+              </div>
+              <div class="hero-metrics">
+                <div class="metric">
+                  <span class="metric-value">12+</span>
+                  <span class="metric-label">Progetti lanciati</span>
+                </div>
+                <div class="metric">
+                  <span class="metric-value">6</span>
+                  <span class="metric-label">Settori serviti</span>
+                </div>
+                <div class="metric">
+                  <span class="metric-value">24h</span>
+                  <span class="metric-label">Tempo medio risposta</span>
+                </div>
+              </div>
+            </div>
+            <div class="hero-card">
+              <div class="card">
+                <p class="card-kicker">Metodo</p>
+                <h3>Strategia, design e sviluppo su misura.</h3>
+                <p>
+                  Dal concept alla messa online, costruiamo esperienze digitali che
+                  trasformano attenzione in conversioni.
+                </p>
+                <ul>
+                  <li>Branding e identita visiva</li>
+                  <li>Design UI/UX e prototipazione</li>
+                  <li>Sviluppo web veloce e accessibile</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="services">
+          <div class="container">
+            <div class="section-title">
+              <h2>Servizi principali</h2>
+              <p>Un team compatto, processi agili, risultati misurabili.</p>
+            </div>
+            <div class="service-grid">
+              <article class="service-card">
+                <h4>Strategia digitale</h4>
+                <p>Ricerca, posizionamento e road map trimestrali per crescere in modo sostenibile.</p>
+              </article>
+              <article class="service-card">
+                <h4>Design d'impatto</h4>
+                <p>Interfacce eleganti, accessibili e coerenti con il tuo brand.</p>
+              </article>
+              <article class="service-card">
+                <h4>Build veloce</h4>
+                <p>Siti Jekyll performanti, pronti per SEO e campagne marketing.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
