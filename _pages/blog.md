@@ -7,19 +7,21 @@ permalink: /blog/
 pagination:
   enabled: true
   collection: posts
-  per_page: 3
+  per_page: 6
 ---
 
 {% if paginator.posts.size > 0 %}
 <ul class="blog-list">
   {% for post in paginator.posts %}
   <li class="blog-item">
-    {% if post.image %}
-    <img src="{{ post.image | relative_url }}" alt="Anteprima {{ post.title }}" class="blog-thumb" />
-    {% endif %}
-    <a href="{{ post.url | relative_url }}" class="blog-title">{{ post.title }}</a>
-    <span class="blog-date">{{ post.date | date: "%d %b %Y" }}</span>
-    <p>{{ post.excerpt | strip_html | truncate: 140 }}</p>
+    <a href="{{ post.url | relative_url }}" class="blog-card-link" aria-label="Apri il post {{ post.title }}">
+      {% if post.image %}
+      <img src="{{ post.image | relative_url }}" alt="Anteprima {{ post.title }}" class="blog-thumb" />
+      {% endif %}
+      <span class="blog-title">{{ post.title }}</span>
+      <span class="blog-date">{{ post.date | date: "%d %b %Y" }}</span>
+      <p>{{ post.excerpt | strip_html | truncate: 140 }}</p>
+    </a>
   </li>
   {% endfor %}
 </ul>

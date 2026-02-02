@@ -7,8 +7,6 @@ image: /assets/images/post-velocity.svg
 excerpt: "Come ottenere build veloci, asset ottimizzati e tempi di caricamento sotto i 2 secondi."
 ---
 
-![Anteprima performance]({{ page.image }})
-
 Per siti editoriali e corporate, Jekyll con Vite e una combinazione potente: build rapide, asset moderni e zero backend da gestire.
 
 Checklist che seguiamo:

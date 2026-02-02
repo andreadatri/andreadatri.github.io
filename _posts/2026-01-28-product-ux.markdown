@@ -7,8 +7,6 @@ image: /assets/images/post-product.svg
 excerpt: "Tre pattern pratici per ridurre l'abbandono e aumentare l'attivazione nelle prime 48 ore."
 ---
 
-![Anteprima product UX]({{ page.image }})
-
 Un onboarding efficace fa la differenza tra utenti curiosi e utenti attivi. Nei progetti SaaS che seguiamo, lavoriamo su tre leve principali:
 
 1. **Obiettivo chiaro al primo accesso**: una sola call to action, niente distrazioni.

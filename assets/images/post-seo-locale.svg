@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title>SEO Locale</title>
+  <desc>Visibilita nel territorio</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d7e9ee"/>
+      <stop offset="100%" stop-color="#a8ced8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="36" fill="url(#bg)"/>
+  <circle cx="1020" cy="470" r="26" fill="#f7f7f4"/>
+  <path d="M160 470 C 380 260, 620 260, 780 310 C 900 345, 980 340, 1040 470" fill="none" stroke="#f2f3ef" stroke-width="11" stroke-linecap="round"/>
+  <text x="140" y="260" fill="#1f3028" font-family="Georgia, 'Times New Roman', serif" font-size="66">SEO Locale</text>
+  <text x="140" y="322" fill="#1f3028" font-family="Arial, sans-serif" font-size="46">Visibilita nel territorio</text>
+</svg>

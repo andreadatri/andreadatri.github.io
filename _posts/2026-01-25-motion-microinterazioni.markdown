@@ -7,8 +7,6 @@ image: /assets/images/post-motion.svg
 excerpt: "Piccoli movimenti, grande impatto: 5 esempi che aumentano percezione e conversioni."
 ---
 
-![Anteprima motion]({{ page.image }})
-
 Le micro-interazioni comunicano cura e aumentano la percezione di qualita. Le piu efficaci:
 
 1. Stati di hover con feedback visivo

@@ -7,8 +7,6 @@ image: /assets/images/post-copy.svg
 excerpt: "Headline, benefit e CTA: come costruire messaggi che parlano ai clienti giusti."
 ---
 
-![Anteprima copy]({{ page.image }})
-
 Un buon copy non e poesia: e chiarezza, struttura e beneficio immediato. La nostra regola:
 
 - Headline con proposta di valore

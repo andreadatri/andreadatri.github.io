@@ -7,8 +7,6 @@ image: /assets/images/post-brand.svg
 excerpt: "Un percorso rapido per definire identita visiva, tono di voce e kit operativo in due settimane."
 ---
 
-![Anteprima brand sprint]({{ page.image }})
-
 In due settimane possiamo dare forma a un'identita coerente e pronta per il lancio. Il processo parte da un workshop con il team, continua con moodboard e direzioni visive, e si chiude con un kit pronto da usare.
 
 Cosa include il brand sprint:

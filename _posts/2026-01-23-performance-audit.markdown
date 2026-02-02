@@ -7,8 +7,6 @@ image: /assets/images/post-audit.svg
 excerpt: "Una checklist rapida per individuare colli di bottiglia e priorita tecniche."
 ---
 
-![Anteprima audit]({{ page.image }})
-
 Quando il sito rallenta, la diagnosi deve essere veloce. Il nostro audit rapido include:
 
 - Analisi Lighthouse con focus su LCP e CLS
